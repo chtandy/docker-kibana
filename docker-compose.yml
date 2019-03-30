@@ -1,7 +1,11 @@
 version: '2'
 services:
   kibana:
-    image: docker.elastic.co/kibana/kibana:6.7.0
+    build:
+      context: kibana/
+      args:
+        ELK_VERSION: $ELK_VERSION
+    container_name: kibana
     volumes:
       - ./kibana.yml:/usr/share/kibana/config/kibana.yml
     #environment:
