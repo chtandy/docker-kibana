@@ -6,6 +6,8 @@ services:
       args:
         ELK_VERSION: $ELK_VERSION
     container_name: kibana
+    hostname: kibana
+    restart: unless-stopped
     volumes:
       - ./kibana.yml:/usr/share/kibana/config/kibana.yml
     #environment:
