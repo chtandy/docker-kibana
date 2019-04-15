@@ -9,7 +9,4 @@ services:
     hostname: kibana
     restart: unless-stopped
     volumes:
-      - ./kibana.yml:/usr/share/kibana/config/kibana.yml
-    #environment:
-      #SERVER_NAME: {{FQDN  or kibana}}
-      #ELASTICSEARCH_HOSTS: {{FQDN or ip}}:9200
+      - ./kibana/config/kibana.yml:/usr/share/kibana/config/kibana.yml
