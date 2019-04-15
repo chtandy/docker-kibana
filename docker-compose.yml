@@ -15,3 +15,4 @@ services:
     environment:
       SERVER_NAME: $SERVER_NAME
       ELASTICSEARCH_URL: $ELASTICSEARCH_URL
+      SERVER_HOST: $SERVER_HOST
