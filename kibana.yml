@@ -1,7 +1,0 @@
-server.port: 5601
-server.host: "0"
-server.maxPayloadBytes: 1048576
-server.name: kibana
-server.defaultRoute: "/app/kibana"
-elasticsearch.url: "http://localhost:9200"
-kibana.index: ".kibana"
