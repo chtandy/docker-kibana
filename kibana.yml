@@ -1,7 +1,7 @@
 server.port: 5601
-server.host: "{{ip or localhost or 0.0.0.0}}"
+server.host: "0"
 server.maxPayloadBytes: 1048576
-server.name: "{{HOSTNAME}}"
+server.name: kibana
 server.defaultRoute: "/app/kibana"
 elasticsearch.url: "http://localhost:9200"
 kibana.index: ".kibana"
