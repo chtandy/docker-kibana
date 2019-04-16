@@ -1,15 +1,13 @@
 version: '2'
+  
 services:
+
   kibana:
     build:
       context: kibana/
       args:
         ELK_VERSION: $ELK_VERSION
-    container_name: kibana
-    hostname: kibana
-    restart: unless-stopped
     volumes:
-      - ./kibana/kibana.yml:/usr/share/kibana/config/kibana.yml:ro
+      - ./kibana/config/:/usr/share/kibana/config:ro
     ports:
       - "5601:5601"
-
