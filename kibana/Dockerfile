@@ -1,7 +1,7 @@
 ARG ELK_VERSION
+  
+# https://github.com/elastic/kibana-docker
+FROM docker.elastic.co/kibana/kibana-oss:${ELK_VERSION}
 
-# https://github.com/elastic/logstash-docker
-FROM docker.elastic.co/kibana/kibana:${ELK_VERSION}
-
-# Add your logstash plugins setup here
-# Example: RUN logstash-plugin install logstash-filter-json
+# Add your kibana plugins setup here
+# Example: RUN kibana-plugin install <name|url>
